@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5F4FD1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:contentDescription="Back"
+                android:padding="8dp"
+                android:src="@drawable/ic_back_arrow"
+                app:tint="@android:color/white" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:text="IndiGo"
+            android:contentDescription="IndiGo Logo" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Date -->
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="20 December 2022"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Flight Route Section -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <!-- DEL -->
+                    <LinearLayout
+                        android:id="@+id/layoutDeparture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DEL"
+                            android:textColor="#000000"
+                            android:textSize="32sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Delhi International Airport"
+                            android:textColor="#666666"
+                            android:textSize="10sp"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <!-- Flight Duration and Icon -->
+                    <LinearLayout
+                        android:id="@+id/layoutFlightInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/flightIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp">
+
+                            <View
+                                android:layout_width="30dp"
+                                android:layout_height="2dp"
+                                android:background="@drawable/dashed_line_yellow" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="✈"
+                                android:textColor="#FFA726"
+                                android:textSize="24sp" />
+
+                            <View
+                                android:layout_width="30dp"
+                                android:layout_height="2dp"
+                                android:background="@drawable/dashed_line_yellow" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="04h 30m"
+                            android:textColor="#666666"
+                            android:textSize="12sp"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <!-- BLR -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="vertical"
+                        android:gravity="end">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BLR"
+                            android:textColor="#000000"
+                            android:textSize="32sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bengaluru Airport India"
+                            android:textColor="#666666"
+                            android:textSize="10sp"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- Passenger Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="👤"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="01 Adult"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🍴"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Meal"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Passenger Details Grid -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Passenger Name"
+                            android:textColor="#999999"
+                            android:textSize="11sp"
+                            android:layout_marginBottom="4dp" />
+
+                        <TextView
+                            android:id="@+id/tvPassengerName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shreya Kumar"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Flight Type"
+                            android:textColor="#999999"
+                            android:textSize="11sp"
+                            android:layout_marginBottom="4dp" />
+
+                        <TextView
+                            android:id="@+id/tvFlightType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Economy"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Flight Code"
+                            android:textColor="#999999"
+                            android:textSize="11sp"
+                            android:layout_marginBottom="4dp" />
+
+                        <TextView
+                            android:id="@+id/tvFlightCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IG-2105"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Boarding Details Grid -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Boarding Time"
+                            android:textColor="#999999"
+                            android:textSize="11sp"
+                            android:layout_marginBottom="4dp" />
+
+                        <TextView
+                            android:id="@+id/tvBoardingTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08:15 AM"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gate"
+                            android:textColor="#999999"
+                            android:textSize="11sp"
+                            android:layout_marginBottom="4dp" />
+
+                        <TextView
+                            android:id="@+id/tvGate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A5"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Terminal"
+                            android:textColor="#999999"
+                            android:textSize="11sp"
+                            android:layout_marginBottom="4dp" />
+
+                        <TextView
+                            android:id="@+id/tvTerminal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="T2"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Seat Number"
+                            android:textColor="#999999"
+                            android:textSize="11sp"
+                            android:layout_marginBottom="4dp" />
+
+                        <TextView
+                            android:id="@+id/tvSeatNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A5"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Dashed Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DDDDDD"
+                    android:layout_marginVertical="16dp" />
+
+                <!-- Barcode -->
+                <ImageView
+                    android:id="@+id/ivBarcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/barcode_sample"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="Barcode" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="1 2 5 8 4 6 2 4 2 7 5 3 1 3 5 0 6 7 5 9"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:letterSpacing="0.1"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Terms & Condition -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms &amp; Condition"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Curabitur ultrices nisl ac vulputate lacinia. Donec pharetra tincidunt velit, sed iaculis est sollicitudin ac."
+                    android:textColor="#666666"
+                    android:textSize="11sp"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Download Button -->
+                <Button
+                    android:id="@+id/btnDownload"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="Download E-Ticket"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_bg"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
