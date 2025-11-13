@@ -81,16 +81,25 @@ app/
 
 ## 🖼️ Aperçu de l’interface
 
-| Écran principal                                               | Liste des vols                                                   | Ticket Détail                                                      |
-| ------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Écran principal                                               |                                                                                                        |
+| ------------------------------------------------------------- | 
 | <img width="440" height="562" alt="image" src="https://github.com/user-attachments/assets/eec14f25-f070-4734-bdd8-7e6db5147f62" />
- | <img width="274" height="665" alt="image" src="https://github.com/user-attachments/assets/dcb0a795-4f72-4dd5-823f-0897b40d933a" />
- | <img width="247" height="441" alt="image" src="https://github.com/user-attachments/assets/2e71bced-8613-475b-9eb7-331c1b89db5d" />
- |
+ 
+ 
+ 
 
+------------------------------------------------------------------
 
+| Liste des vols                                                 |
+|----------------------------------------------------------------|
+| <img width="274" height="665" alt="image" src="https://github.com/user-attachments/assets/dcb0a795-4f72-4dd5-823f-0897b40d933a" />
 
----
+------------------------------------------------------------------
+
+|Ticket Détail                                                       |
+| ------------------------------------------------------------------ |
+| <img width="247" height="441" alt="image" src="https://github.com/user-attachments/assets/2e71bced-8613-475b-9eb7-331c1b89db5d" />
+
 
 ## 🚀 Installation et exécution
 
