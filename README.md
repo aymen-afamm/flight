@@ -81,7 +81,7 @@ app/
 
 ## 🖼️ Aperçu de l’interface
 
-| Écran principal                                               |                                                                                                        |
+| Écran principal                                               |                                                                                                        
 | ------------------------------------------------------------- | 
 | <img width="440" height="562" alt="image" src="https://github.com/user-attachments/assets/eec14f25-f070-4734-bdd8-7e6db5147f62" />
  
