@@ -169,12 +169,6 @@ app/
 * Implémenter une **base de données locale (Room)** pour sauvegarder les favoris
 * Support du **thème sombre (Dark Mode)**
 
----
-
-## 📄 Licence
-
-Ce projet est distribué sous la licence **MIT**.
-Tu es libre de l’utiliser, le modifier et le partager.
 
 
 
